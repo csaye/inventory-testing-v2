@@ -7,6 +7,8 @@ namespace InventoryTesting.UI
 {
     public class Inventory : MonoBehaviour
     {
+        public static Inventory instance;
+
         [Header("References")]
         public GameObject inventorySlotPrefab;
         public Transform hotbarPanel;
@@ -24,6 +26,11 @@ namespace InventoryTesting.UI
 
         private void Start()
         {
+            if (instance == null)
+            {
+                instance = this;
+            }
+
             if (inventoryPanelCanvasGroup == null)
             {
                 inventoryPanelCanvasGroup = inventoryPanel.GetComponent<CanvasGroup>();
