@@ -36,8 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\InventoryManager.cs" />
-     <Compile Include="Assets\PlayerMovement.cs" />
+     <Compile Include="Assets\InventoryTesting\Scripts\Gameplay\Player\PlayerMovement.cs" />
+     <Compile Include="Assets\InventoryTesting\Scripts\UI\Inventory\Inventory.cs" />
+     <Compile Include="Assets\InventoryTesting\Scripts\UI\Inventory\InventorySlot.cs" />
+     <Compile Include="Assets\InventoryTesting\Scripts\UI\Inventory\Item.cs" />
      <None Include="Assets\Tools\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\Tools\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Tools\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
